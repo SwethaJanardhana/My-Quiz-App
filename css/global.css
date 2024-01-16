@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --correct-option-selection: rgb(115, 186, 115);
+  --wrong-option-selection: rgb(225, 120, 82);
+  --selcetion-background-color: darkorchid;
+  --font-color: whitesmoke;
+  --options-background-color: white;
+  --question-card-background: whitesmoke;
+  --page-backgound-color: rgb(99, 192, 223);
+  --header-footer-background-color: rgb(134, 168, 219);
+
+  --primary: #ffffff;
+  --secondary-light: rgb(134, 168, 219);
+  --black: #252629;
+}
+
+body {
+  background-color: rgb(176, 193, 218);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+  padding: 0;
+}
