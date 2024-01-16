@@ -1,0 +1,73 @@
+.profile {
+  padding: 10rem 6rem 8rem 6rem;
+}
+
+.profile > * {
+  margin: 0 0 2rem;
+}
+
+.profile__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile__card-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__settings {
+  width: 90%;
+  margin: auto;
+}
+
+.profile__settings-darkmode-input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.profile__settings-darkmode-label {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--fs-500);
+  height: 40px;
+}
+
+.profile__settings-darkmode-label:before {
+  width: 80px;
+  height: 40px;
+  background: rgb(115, 115, 131);
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+  content: "";
+  right: 0;
+  border: 1px solid black;
+}
+
+.profile__settings-darkmode-label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 90px;
+  transition: right 0.3s;
+}
+
+.profile__settings-darkmode-input:checked
+  + .profile__settings-darkmode-label:before {
+  background: rgb(48, 48, 229);
+}
+
+.profile__settings-darkmode-input:checked
+  + .profile__settings-darkmode-label:after {
+  right: 5px;
+}

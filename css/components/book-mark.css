@@ -1,0 +1,28 @@
+.bookmark {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 4rem;
+  height: 4rem;
+  fill: rgb(4, 81, 4);
+}
+
+.bookmarked {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 4rem;
+  height: 4rem;
+  fill: rgb(157, 15, 15);
+}
+
+.app-bm {
+  background-color: var(--question-card-background);
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  height: 90vh;
+}

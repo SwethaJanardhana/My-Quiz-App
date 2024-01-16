@@ -8,32 +8,12 @@
   </head>
   <body>
     <header class="header_quiz-title">
-      <h1>Flags Quiz</h1>
+      <h1>Bookmarked Questions</h1>
     </header>
-    <main class="main_content">
-      <section class="app">
-        <span class="bookmark" data-js="bookMark"></span>
-        <h1 data-js="question-number">Guess the flag :</h1>
-        <article>
-          <h2 data-js="question" class="flag_size">Flag</h2>
-          <div class="answer-options" data-js="answer-options">
-            <button class="answer-button">Answer1</button>
-            <button class="answer-button">Answer2</button>
-            <button class="answer-button">Answer3</button>
-            <button class="answer-button">Answer4</button>
-          </div>
-          <div class="buttons-align">
-            <button class="show-answer" data-js="show-answer">
-              Show Answer
-            </button>
-            <button class="next-button" data-js="next">Next</button>
-          </div>
-        </article>
-      </section>
-    </main>
+    <main data-js="bookmark-main" class="main_content"></main>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__list-item navigation__list-item--active">
+        <li class="navigation__list-item">
           <a
             class="navigation__link"
             href="/html/index.html"
@@ -51,7 +31,7 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item">
+        <li class="navigation__list-item navigation__list-item--active">
           <a
             class="navigation__link"
             href="/html/bookMark.html"
@@ -89,6 +69,6 @@
         </li>
       </ul>
     </nav>
-    <script type="module" src="/javascript/script.js"></script>
+    <script type="module" src="/javascript/bookMark.js"></script>
   </body>
 </html>
