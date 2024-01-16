@@ -23,6 +23,7 @@ function startQuiz() {
   score = 0;
   nextButton.innerHTML = "Next";
   showAnswerButton.innerHTML = "Show Answer";
+
   showQuestion();
 }
 
@@ -61,6 +62,7 @@ function showQuestion() {
 function resetState() {
   bookMarkedElement.bookMark = false;
   nextButton.style.display = "none";
+  showAnswerButton.style.display = "block";
   while (answerOptionsButton.firstChild) {
     answerOptionsButton.removeChild(answerOptionsButton.firstChild);
   }
@@ -82,6 +84,7 @@ function selectAnswer(e) {
     button.disabled = true;
   });
   nextButton.style.display = "block";
+  showAnswerButton.style.display = "none";
 }
 
 function showScore() {
@@ -119,6 +122,7 @@ showAnswerButton.addEventListener("click", () => {
     button.disabled = true;
   });
   nextButton.style.display = "block";
+  showAnswerButton.style.display = "none";
 });
 
 bookMarkedElement.addEventListener("click", () => {
